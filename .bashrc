@@ -1,0 +1,1 @@
+alias vsix_mv="vsce package && mv create-terminals-*.vsix ~/"
