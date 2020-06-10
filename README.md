@@ -27,3 +27,9 @@ configure created terminals once vscode open
 
 it will create two terminals `hello` and `tail_lint`
 
+### changes
+
+#### 0.0.2
+
+add timestamp to channel log
+

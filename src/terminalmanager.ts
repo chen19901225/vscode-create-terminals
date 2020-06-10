@@ -1,6 +1,6 @@
 import * as vscode from "vscode";
-import * as os from "os";
 import * as path from "path";
+import * as moment from 'moment';
 
 interface ICommand {
     name: string
@@ -25,7 +25,7 @@ export class TerminalManager {
     }
 
     public logText(text:string){
-        this._outputChannel.appendLine(new Date().valueOf() +'--' +text);
+        this._outputChannel.appendLine(moment().format() +'--' +text);
     }
 
     public loadConfig() {
