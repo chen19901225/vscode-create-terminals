@@ -6,6 +6,7 @@ configure created terminals once vscode open
 ## valid replace for cmd
 
 `${workspaceRoot}`: workspaceRoot
+
 `${projectName}`: project name, if `${workspaceRoot}=/home/vagrant/data-end`, then `${projectName}=data_end`
 
 ## config example

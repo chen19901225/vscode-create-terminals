@@ -25,7 +25,7 @@ export class TerminalManager {
     }
 
     public logText(text:string){
-        this._outputChannel.appendLine(moment().format() +'--' +text);
+        this._outputChannel.appendLine(`${moment().format()}--${text}`);
     }
 
     public loadConfig() {

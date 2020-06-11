@@ -1,72 +1,72 @@
 {
-	"name": "create-terminals",
-	"displayName": "create-terminals",
-	"description": "",
-	"publisher": "cqh",
-	"version": "0.0.2",
-	"engines": {
-		"vscode": "^1.45.0"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/chen19901225/vscode-create-terminals.git"
-	},
-	"categories": [
-		"Other"
-	],
-	"activationEvents": [
-		"*"
-	],
-	"main": "./out/extension.js",
-	"contributes": {
-		"configuration": {
-			"title": "create-terminals configuration",
-			"type": "object",
-			"properties": {
-				"create-terminals.commands": {
-					"description": "array of commands",
-					"type": "array",
-					"items": {
-						"type": "object",
-						"properties": {
-							"name": {
-								"type": "string",
-								"description": "terminal name",
-								"default": ""
-							},
-							"cmd": {
-								"type": "string",
-								"description": "Command to execute on save.",
-								"default": "echo ${file}"
-							}
-						}
-					}
-				}
-			}
-		}
-	},
-	"scripts": {
-		"vscode:prepublish": "npm run compile",
-		"compile": "tsc -p ./",
-		"lint": "eslint src --ext ts",
-		"watch": "tsc -watch -p ./",
-		"pretest": "npm run compile && npm run lint",
-		"test": "node ./out/test/runTest.js"
-	},
-	"devDependencies": {
-		"@types/vscode": "^1.45.0",
-		"@types/glob": "^7.1.1",
-		"@types/mocha": "^7.0.2",
-		"@types/node": "^13.11.0",
-		"eslint": "^6.8.0",
-		"@typescript-eslint/parser": "^2.30.0",
-		"@typescript-eslint/eslint-plugin": "^2.30.0",
-		"glob": "^7.1.6",
-		"mocha": "^7.1.2",
-		"typescript": "^3.8.3",
-		"vscode-test": "^1.3.0"
-	},
-	"dependencies": {
-		"moment": "^2.26.0"
-	}
+    "name": "create-terminals",
+    "displayName": "create-terminals",
+    "description": "",
+    "publisher": "cqh",
+    "version": "0.0.3",
+    "engines": {
+        "vscode": "^1.45.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/chen19901225/vscode-create-terminals.git"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "*"
+    ],
+    "main": "./out/extension.js",
+    "contributes": {
+        "configuration": {
+            "title": "create-terminals configuration",
+            "type": "object",
+            "properties": {
+                "create-terminals.commands": {
+                    "description": "array of commands",
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "name": {
+                                "type": "string",
+                                "description": "terminal name",
+                                "default": ""
+                            },
+                            "cmd": {
+                                "type": "string",
+                                "description": "Command to execute on save.",
+                                "default": "echo ${file}"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "lint": "eslint src --ext ts",
+        "watch": "tsc -watch -p ./",
+        "pretest": "npm run compile && npm run lint",
+        "test": "node ./out/test/runTest.js"
+    },
+    "devDependencies": {
+        "@types/vscode": "^1.45.0",
+        "@types/glob": "^7.1.1",
+        "@types/mocha": "^7.0.2",
+        "@types/node": "^13.11.0",
+        "eslint": "^6.8.0",
+        "@typescript-eslint/parser": "^2.30.0",
+        "@typescript-eslint/eslint-plugin": "^2.30.0",
+        "glob": "^7.1.6",
+        "mocha": "^7.1.2",
+        "typescript": "^3.8.3",
+        "vscode-test": "^1.3.0"
+    },
+    "dependencies": {
+        "moment": "^2.26.0"
+    }
 }
