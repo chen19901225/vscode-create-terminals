@@ -3,7 +3,7 @@
     "displayName": "create-terminals",
     "description": "",
     "publisher": "cqh",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "engines": {
         "vscode": "^1.45.0"
     },
@@ -19,6 +19,12 @@
     ],
     "main": "./out/extension.js",
     "contributes": {
+        "commands": [
+			{
+				"command": "create-terminals.reloadConfig",
+				"title": "Create Terminals: Reload Config"
+			}
+		],
         "configuration": {
             "title": "create-terminals configuration",
             "type": "object",

@@ -34,3 +34,7 @@ it will create two terminals `hello` and `tail_lint`
 
 add timestamp to channel log
 
+#### 0.0.4
+
+add command `create-terminals.reloadConfig` to reloadConfig and create terminals
+
