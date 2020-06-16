@@ -51,14 +51,16 @@ export class TerminalManager {
             if(terminal == null){
                 this.logText(`terminal ${command.name} already closed`);
             } else {
+                
                 terminal.dispose();
+                this.logText(`success close terminal ${command.name}`)
             }
         }
     }
 
     public start() {
         let interval = () => {
-            this.logText("call interval");
+            //this.logText("call interval");
             setTimeout(() => {
                 interval()
             }, 5000);

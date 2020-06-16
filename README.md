@@ -38,3 +38,7 @@ add timestamp to channel log
 
 add command `create-terminals.reloadConfig` to reloadConfig and create terminals
 
+#### 0.0.5
+
+fix `create-terminals.reloadConfig` to create terminal quickly.
+
