@@ -42,3 +42,7 @@ add command `create-terminals.reloadConfig` to reloadConfig and create terminals
 
 fix `create-terminals.reloadConfig` to create terminal quickly.
 
+#### 0.0.6
+
+fix replace bug
+

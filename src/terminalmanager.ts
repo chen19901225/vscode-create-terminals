@@ -94,7 +94,7 @@ export class TerminalManager {
     public formatCmd(cmdStr: string): string {
         let rootPath = this.getWorkspaceRoot();
         let defaultProjectName = rootPath?.split(path.sep).pop();
-        defaultProjectName = defaultProjectName?.replace("-", "_");
+        defaultProjectName = defaultProjectName?.replace(/\-/g, "_");
         cmdStr = cmdStr.replace(/\${workspaceRoot}/g, `${rootPath}`);
         cmdStr = cmdStr.replace(/\${projectName}/g, `${defaultProjectName}`);
 
