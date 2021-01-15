@@ -57,6 +57,15 @@ export class TerminalManager {
             }
         }
     }
+    public closeAllTerminal() {
+        let terminals = vscode.window.terminals;
+            
+        for(let i=0;i<terminals.length;i++){
+            let walkTerminal = terminals[i];
+            this.logText(`close terminal index:${i},  name=[${walkTerminal.name}]`)
+            walkTerminal.dispose();
+        }
+    }
 
     public start() {
         let interval = () => {

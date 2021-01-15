@@ -22,6 +22,10 @@ export function activate(context: vscode.ExtensionContext) {
 		manager.closeTerminal();
 		manager.run_once();
 	});
+
+	vscode.commands.registerCommand("create-terminals.close_all_terminal", () => {
+		manager.closeAllTerminal();
+	})
 	// The command has been defined in the package.json file
 	// Now provide the implementation of the command with registerCommand
 	// The commandId parameter must match the command field in package.json
