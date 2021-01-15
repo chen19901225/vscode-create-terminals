@@ -46,3 +46,7 @@ fix `create-terminals.reloadConfig` to create terminal quickly.
 
 fix replace bug
 
+### 0.0.7
+
+add `close all terminal` command to close all active terminal
+

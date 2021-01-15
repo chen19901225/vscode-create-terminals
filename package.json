@@ -3,7 +3,7 @@
     "displayName": "create-terminals",
     "description": "",
     "publisher": "cqh",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "engines": {
         "vscode": "^1.45.0"
     },
@@ -25,8 +25,8 @@
                 "title": "Create Terminals: Reload Config"
             },
             {
-                "command": "create-terminals:close_all_terminal",
-                "title": "close all terminal"
+                "command": "create-terminals.close_all_terminal",
+                "title": "Create Terminals: close all terminal"
             }
         ],
         "configuration": {
