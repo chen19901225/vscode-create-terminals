@@ -26,6 +26,19 @@ configure created terminals once vscode open
     ],
 ```
 
+### file watcher
+
+
+```
+{
+    "create-terminals.commands": [{
+        "name": "gpush",
+        "cmd": "${workspaceRoot}/venv/bin/cqh_file_watcher --conf=${workspaceRoot}/playbooks/file_watcher/gpush.json"
+    }]
+}
+```
+
+
 it will create two terminals `hello` and `tail_lint`
 
 ### changes
